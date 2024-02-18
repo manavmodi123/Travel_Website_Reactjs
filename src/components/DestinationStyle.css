@@ -1,0 +1,154 @@
+.destination{
+    margin: 4rem 6rem;
+
+}
+.destination h1{
+    font-size: 3rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-weight: 800;
+
+}
+.destination p{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    
+    margin-top: -10px;
+
+}
+.first-des {
+    margin-top: 4.5rem;
+    display: flex; /* Change to flex */
+    justify-content: space-between; /* Add space between elements */
+}
+.first-des-reverse {
+    margin-top: 4.5rem;
+    flex-direction: row-reverse;
+    display: flex; /* Change to flex */
+    justify-content: space-between; /* Add space between elements */
+}
+
+.dest-text {
+    width: 45%;
+    text-align: start;
+    font-size: 1.3rem;
+}
+.image{
+    position: relative;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -99;
+}
+.image img{
+    width: 49%;
+    object-fit: cover;
+    height: 350px;
+    box-shadow: -1px 1px 62px -19px rgba(0, 0, 0, 0.19);
+    border-radius: 8px;
+}
+
+.image img:nth-child(2){
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+
+
+/* Media query for mobile screens */
+@media screen and (max-width: 768px) {
+    .destination {
+      margin: 2rem;
+    }
+  
+    .destination h1 {
+      font-size: 2rem;
+      text-align: center; /* Center the heading on mobile screens */
+    }
+  
+    .destination p {
+      font-size: 1rem;
+      text-align: center; /* Center the paragraph on mobile screens */
+      margin-bottom: 1rem; /* Add some space below the paragraph */
+    }
+  
+    .first-des,
+    .first-des-reverse {
+      margin-top: 2.5rem;
+      flex-direction: column;
+      align-items: center; /* Center the text and images vertically on mobile screens */
+    }
+  
+    .dest-text {
+      font-size: 1.1rem;
+      width: 80%; /* Set width for text container */
+      text-align: left; /* Align text to the left */
+      margin: 0 auto 1rem; /* Center the text horizontally and add space below */
+    }
+  
+    .image {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap; /* Ensure images wrap to new line if needed */
+      justify-content: space-between;
+      align-items: center; /* Center the images horizontally on mobile screens */
+      margin-top: 1rem; /* Add some space between text and images */
+    }
+  
+    .image img {
+      width: calc(50% - 10px); /* Set width for each image */
+      object-fit: cover;
+      max-height: 300px;
+      border-radius: 8px; /* Add border-radius to images */
+      margin-bottom: 1rem; /* Add space below each image */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .destination {
+      margin: 2rem;
+    }
+  
+    .destination h1 {
+      font-size: 2rem;
+      text-align: center; /* Center the heading on mobile screens */
+    }
+  
+    .destination p {
+      font-size: 1rem;
+      text-align: center; /* Center the paragraph on mobile screens */
+      margin-bottom: 1rem; /* Add some space below the paragraph */
+    }
+  
+    .first-des,
+    .first-des-reverse {
+      margin-top: 2.5rem;
+      flex-direction: column;
+      align-items: center; /* Center the text and images vertically on mobile screens */
+    }
+  
+    .dest-text {
+      font-size: 1.1rem;
+      max-width: 80%; /* Set maximum width for text container */
+      text-align: left; /* Align text to the left */
+      margin: 0 auto 1rem; /* Center the text horizontally and add space below */
+    }
+  
+    .image {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; /* Center the images horizontally on mobile screens */
+      margin-top: 1rem; /* Add some space between text and images */
+    }
+  
+    .image img {
+      width: calc(50% - 10px); /* Set width for each image */
+      object-fit: cover;
+      max-height: 300px;
+      border-radius: 8px; /* Add border-radius to images */
+    }
+  }
+  
